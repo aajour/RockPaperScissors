@@ -57,7 +57,7 @@ $(function() {
   function showModal(imgId) {
     var randomImg = getRandomImg();
 
-    $("#modalImg").attr("src", "images/" + imgId + ".JPG");
+    $("#modalImg").attr("src", "images/" + randomImg + ".JPG");
     $("#choosedSpan").text(randomImg);
 
     if (resultCheck(imgId, randomImg) == 1) {
