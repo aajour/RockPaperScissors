@@ -5,7 +5,7 @@ body {
   text-align: center;
   font-family: "Mukta", sans-serif;
 }
-img {
+.images {
   filter: grayscale(100%);
   width: 20vw;
   height: 26vh;
@@ -15,6 +15,10 @@ img {
 img:hover {
   filter: none;
   cursor: pointer;
+}
+.modalImg {
+  width: 20vw;
+  height: 26vh;
 }
 
 #restart {
@@ -54,4 +58,23 @@ p:last-child {
   background-color: brown;
   font-size: 20px;
   padding: 0.4rem 1.3rem;
+}
+.modal {
+  display: none;
+  position: absolute;
+  background-color: #4ee0a4;
+  width: 40%;
+  margin: auto;
+  z-index: 1;
+  left: 30%;
+  top: 40%;
+  transition: all 0.5s ease;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 9px;
+  cursor: pointer;
+  font-size: 30px;
+  color: red;
 }

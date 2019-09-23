@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
     <title>Rock Paper Scissors</title>
   </head>
   <body>
@@ -16,12 +22,20 @@
       </div>
       <h2>Make your selection</h2>
       <div class="imgs">
-        <img src="images/rock.JPG" alt="" id="rock" />
-        <img src="images/paper.JPG" alt="" id="paper" />
-        <img src="images/sci.JPG" alt="" id="sci" />
+        <img src="images/rock.JPG" alt="" class="images" id="rock" />
+        <img src="images/paper.JPG" alt="" class="images" id="paper" />
+        <img src="images/sci.JPG" alt="" class="images" id="sci" />
       </div>
 
       <button id="restart">Restart</button>
+
+      <div id="modal" class="modal">
+        <span class="close" id="close">&times;</span>
+        <h2>You <span id="choosed">Lose</span></h2>
+        <img class="modalImg" src="images/rock.JPG" alt="" id="rock" />
+        <h3>Computer Chose <span>Rock</span></h3>
+      </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
