@@ -17,8 +17,8 @@
     <div class="cotainer">
       <h1>Rock-Paper-Scissors Game!</h1>
       <div class="result">
-        <p id="player">Player: <span>0</span></p>
-        <p id="computer">Computer: <span>0</span></p>
+        <p id="player">Player: <span id="playerResutl"></span></p>
+        <p id="computer">Computer: <span id="computerResutl"></span></p>
       </div>
       <h2>Make your selection</h2>
       <div class="imgs">
@@ -31,9 +31,15 @@
 
       <div id="modal" class="modal">
         <span class="close" id="close">&times;</span>
-        <h2>You <span id="choosed">Lose</span></h2>
-        <img class="modalImg" src="images/rock.JPG" alt="" id="rock" />
-        <h3>Computer Chose <span>Rock</span></h3>
+        <h2 id="resultSpan"></h2>
+        <img
+          class="modalImg"
+          id="modalImg"
+          src="images/rock.JPG"
+          alt=""
+          id="rock"
+        />
+        <h3>Computer Chose <span id="choosedSpan"></span></h3>
       </div>
     </div>
     <script src="script.js"></script>
